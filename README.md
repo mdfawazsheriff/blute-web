@@ -1,8 +1,8 @@
-# Delivery marketplace
+# blute.ai - Unified Last-Mile Delivery Marketplace
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/mdfawazsheriff01-6260s-projects/v0-delivery-marketplace)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/mdfawazsheriff01-6260s-projects/blute-ai)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/kiDRaposnB0)
 
 ## Overview
@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/mdfawazsheriff01-6260s-projects/v0-delivery-marketplace](https://vercel.com/mdfawazsheriff01-6260s-projects/v0-delivery-marketplace)**
+**[https://vercel.com/mdfawazsheriff01-6260s-projects/blute-ai](https://vercel.com/mdfawazsheriff01-6260s-projects/blute-ai)**
 
 ## Build your app
 
