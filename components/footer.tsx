@@ -6,9 +6,9 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">FD</span>
+                <span className="text-primary-foreground font-bold text-sm">BA</span>
               </div>
-              <span className="font-semibold text-foreground">FlowDel</span>
+              <span className="font-semibold text-foreground">Blute.ai</span>
             </div>
             <p className="text-sm text-muted-foreground">Unified last-mile delivery marketplace</p>
           </div>
@@ -74,7 +74,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 FlowDel. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© 2025 Blute.ai. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground transition">
               <span className="sr-only">Twitter</span>

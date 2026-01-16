@@ -6,7 +6,7 @@ export function Solution() {
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-foreground">Our Solution</h2>
             <p className="text-lg text-muted-foreground">
-              FlowDel reorganizes fragmented delivery demand into one unified marketplace. We aggregate orders from
+              Blute.ai reorganizes fragmented delivery demand into one unified marketplace. We aggregate orders from
               commerce platforms, food delivery apps, agencies, and local businesses into a single stream.
             </p>
             <div className="space-y-4">

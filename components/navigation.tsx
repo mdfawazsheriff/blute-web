@@ -9,9 +9,9 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">FD</span>
+              <span className="text-primary-foreground font-bold text-sm">BA</span>
             </div>
-            <span className="font-semibold text-lg text-foreground">FlowDel</span>
+            <span className="font-semibold text-lg text-foreground">Blute.ai</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#solution" className="text-sm text-muted-foreground hover:text-foreground transition">
