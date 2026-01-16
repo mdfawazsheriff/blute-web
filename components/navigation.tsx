@@ -4,33 +4,37 @@ import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <nav className="fixed w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">B</span>
+              <span className="text-primary-foreground font-bold text-sm">BA</span>
             </div>
-            <span className="font-semibold text-lg text-foreground">blute.ai</span>
+            <span className="font-semibold text-lg text-foreground">Blute.ai</span>
           </div>
+
           <div className="hidden md:flex items-center gap-8">
-            <a href="#solution" className="text-sm text-muted-foreground hover:text-foreground transition">
-              Platform
+            <a href="#companies" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              For Companies
             </a>
-            <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition">
-              Features
+            <a href="#riders" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              For Riders
             </a>
-            <a href="#audience" className="text-sm text-muted-foreground hover:text-foreground transition">
-              For Business
+            <a href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              How It Works
+            </a>
+            <a href="#trust" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Trust
             </a>
           </div>
-          <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              Get Started
-            </Button>
+
+          <div className="flex items-center gap-6">
+            <a href="#" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              
+            </a>
+
+
           </div>
         </div>
       </div>

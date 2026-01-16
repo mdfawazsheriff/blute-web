@@ -1,56 +1,65 @@
+import { Plug, Gamepad2, Brain, BarChart3, MessageSquare, ShieldCheck } from "lucide-react"
+
 export function Features() {
   const features = [
     {
-      title: "Real-Time Order Pool",
-      description: "Access to all aggregated delivery orders across multiple sources with live updates",
-    },
-    {
-      title: "Rider Tiering System",
-      description: "Silver, Gold, Platinum reliability tiers based on verified performance history",
-    },
-    {
-      title: "Lead Generation Engine",
-      description: "Smart lead matching with booking credits and automated attendance confirmation",
-    },
-    {
-      title: "Demand Prediction",
-      description: "AI-powered forecasting to optimize slot creation and rider availability planning",
-    },
-    {
+      icon: Plug,
       title: "Direct Integration",
-      description: "Seamless API integration for automatic order flow from your existing systems",
+      description: "Connect your existing systems to automatically post delivery orders as they come in.",
     },
     {
-      title: "Performance Analytics",
-      description: "Deep insights into rider behavior, demand patterns, and platform utilization",
+      icon: Gamepad2,
+      title: "Gamified Progression",
+      description: "Riders earn rewards, climb tiers, and unlock benefits through consistent performance.",
+    },
+    {
+      icon: Brain,
+      title: "Demand Prediction",
+      description: "AI-powered forecasting optimizes slot creation based on historical patterns.",
+    },
+    {
+      icon: BarChart3,
+      title: "Analytics Dashboard",
+      description: "Real-time insights into fill rates, rider performance, and demand trends.",
+    },
+    {
+      icon: MessageSquare,
+      title: "Automated Confirmations",
+      description: "Smart attendance confirmation reduces no-shows and increases reliability.",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Fraud Prevention",
+      description: "Blacklisted riders are blocked across the entire platform instantly.",
     },
   ]
 
   return (
-    <section id="features" className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/50">
-      <div className="max-w-7xl mx-auto">
+    <section id="features" className="py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Powerful Features</h2>
-          <p className="text-lg text-muted-foreground">Everything you need to optimize your delivery operations</p>
+          <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block">Platform Features</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Built for <span className="text-primary">Scale</span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Everything you need to optimize your delivery operations and rider management.
+          </p>
         </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, i) => (
             <div
               key={i}
-              className="p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition group cursor-pointer"
+              className="p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary/20 transition-colors group"
             >
-              <div className="mb-4 inline-block w-12 h-12 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition flex items-center justify-center">
-                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <feature.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-semibold text-foreground mb-2">{feature.title}</h3>
-              <p className="text-sm text-muted-foreground">{feature.description}</p>
+              <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

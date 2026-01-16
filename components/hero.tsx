@@ -1,47 +1,31 @@
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="pt-24 pb-32 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center space-y-8">
-          <div className="space-y-4">
-            <div className="inline-block px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">
-              The Unified Delivery Platform
-            </div>
-            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-foreground">
-              One Platform for All Delivery Demand
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Stop managing fragmented delivery networks. Aggregate demand across commerce platforms, food apps, and
-              agencies. Connect riders to real opportunities.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8">
-              Start For Free
-            </Button>
-            <Button size="lg" variant="outline" className="border-border hover:bg-secondary px-8 bg-transparent">
-              Watch Demo
-            </Button>
-          </div>
-          <div className="pt-8 border-t border-border">
-            <p className="text-sm text-muted-foreground mb-6">Trusted by delivery networks across regions</p>
-            <div className="flex justify-center items-center gap-8 flex-wrap">
-              <div className="h-8 w-24 bg-muted rounded flex items-center justify-center text-xs text-muted-foreground font-medium">
-                Company
-              </div>
-              <div className="h-8 w-24 bg-muted rounded flex items-center justify-center text-xs text-muted-foreground font-medium">
-                Company
-              </div>
-              <div className="h-8 w-24 bg-muted rounded flex items-center justify-center text-xs text-muted-foreground font-medium">
-                Company
-              </div>
-              <div className="h-8 w-24 bg-muted rounded flex items-center justify-center text-xs text-muted-foreground font-medium">
-                Company
-              </div>
-            </div>
-          </div>
+    <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      {/* Background Grid */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/10 mb-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <span className="text-primary font-medium text-sm">⚡ Reorganizing Last-Mile Delivery</span>
+        </div>
+
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-100">
+          One Platform.
+          <br />
+          <span className="text-primary">All Delivery Demand.</span>
+        </h1>
+
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+          Stop fighting for riders during peak hours. We aggregate fragmented delivery demand into a unified marketplace where qualified riders find you.
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+
+
+
         </div>
       </div>
     </section>

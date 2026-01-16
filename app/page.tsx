@@ -1,24 +1,24 @@
 import { Navigation } from "@/components/navigation"
 import { Hero } from "@/components/hero"
 import { Problem } from "@/components/problem"
-import { Solution } from "@/components/solution"
-import { Features } from "@/components/features"
+import { HowItWorks } from "@/components/how-it-works"
 import { Stats } from "@/components/stats"
-import { Audience } from "@/components/audience"
-import { CTA } from "@/components/cta"
+import { Trust } from "@/components/trust"
 import { Footer } from "@/components/footer"
+import { Features } from "@/components/features"
+import { Audience } from "@/components/audience"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-primary">
       <Navigation />
       <Hero />
-      <Problem />
-      <Solution />
-      <Features />
       <Stats />
+      <Problem />
+      <HowItWorks />
+      <Features />
+      <Trust />
       <Audience />
-      <CTA />
       <Footer />
     </main>
   )
