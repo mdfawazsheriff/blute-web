@@ -7,7 +7,7 @@ export function Trust() {
                 <div className="text-center mb-16">
                     <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-2 block">Trust Layer</span>
                     <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        Shared <span className="text-primary">Rider Identity</span>
+                        Universal <span className="text-primary">Rider Identity</span>
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                         One verified identity. One reputation. Recognized across every partner company.

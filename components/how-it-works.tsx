@@ -2,8 +2,28 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Building2, Bike, Upload, Search, CheckCircle } from "lucide-react"
+import { useSearchParams } from "next/navigation"
+import { useEffect, useState, Suspense } from "react"
 
 export function HowItWorks() {
+    return (
+        <Suspense fallback={null}>
+            <HowItWorksContent />
+        </Suspense>
+    )
+}
+
+function HowItWorksContent() {
+    const searchParams = useSearchParams()
+    const role = searchParams.get('role')
+    const [activeTab, setActiveTab] = useState("companies")
+
+    useEffect(() => {
+        if (role === 'riders' || role === 'companies') {
+            setActiveTab(role)
+        }
+    }, [role])
+
     return (
         <section id="how-it-works" className="py-24 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,7 +33,7 @@ export function HowItWorks() {
                         Simple for <span className="text-primary">Everyone</span>
                     </h2>
 
-                    <Tabs defaultValue="companies" className="w-full max-w-4xl mx-auto">
+                    <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full max-w-4xl mx-auto">
                         <TabsList className="grid w-full grid-cols-2 h-14 bg-white/5 p-1 rounded-xl">
                             <TabsTrigger
                                 value="companies"

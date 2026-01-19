@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function Navigation() {
   return (
@@ -15,12 +16,12 @@ export function Navigation() {
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-            <a href="#companies" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            <Link href="/?role=companies#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               For Companies
-            </a>
-            <a href="#riders" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link href="/?role=riders#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               For Riders
-            </a>
+            </Link>
             <a href="#how-it-works" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               How It Works
             </a>
@@ -31,7 +32,7 @@ export function Navigation() {
 
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm font-medium text-foreground hover:text-primary transition-colors">
-              
+
             </a>
 
 
